@@ -12,10 +12,10 @@ public class CliArguments {
     }
 
     public Path getFile() { return file; };
-    public Path getOutDir() {return outDir};
+    public Path getOutDir() {return outDir;};
 
     // throw IllegalArgumentException when fail parsing
-    public static void CliArguments (String [] args) {
+    public static CliArguments parse(String [] args) {
         String file = null;
         String outDir = ".";
 
@@ -30,7 +30,7 @@ public class CliArguments {
 
                 case "--outdir" -> {
                     if (i + 1 >= args.length) {
-                        throw new IllegalArgumentException("Missing value for --outdir")
+                        throw new IllegalArgumentException("Missing value for --outdir");
                     }
                     outDir = args[++i];
                 }

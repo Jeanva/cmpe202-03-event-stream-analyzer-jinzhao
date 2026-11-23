@@ -1,10 +1,14 @@
 package edu.analyzer;
 
-import edu.analyzer.aggregator.*;
-import edu.analyzer.classifier.*;
+import edu.analyzer.aggregator.AccessAggregator;
+import edu.analyzer.aggregator.DeviceAggregator;
+import edu.analyzer.aggregator.SensorAggregator;
+import edu.analyzer.classifier.AccessClassifier;
+import edu.analyzer.classifier.DeviceClassifier;
+import edu.analyzer.classifier.SensorClassifier;
 import edu.analyzer.cli.CliArguments;
 import edu.analyzer.output.JsonOutputWriter;
-import edu.analyzer.parser.KeyValueLineParser;
+import edu.KeyValueLineParser;
 import edu.analyzer.service.AnalyzerService;
 import edu.analyzer.service.RecordType;
 
@@ -32,7 +36,7 @@ public class EventStreamAnalyzer {
             return 1;
         }
 
-        if (!Files.isRegularRile(cli.getFile())) {
+        if (!Files.isRegularFile(cli.getFile())) {
             System.err.println("Error: input file not found:" + cli.getFile());
             return 2;
         }
