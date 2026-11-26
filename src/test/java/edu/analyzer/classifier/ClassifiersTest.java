@@ -1,6 +1,6 @@
 package edu.analyzer.classifier;
 
-import edu.KeyValueLineParser;
+import edu.analyzer.parser.KeyValueLineParser;
 import edu.analyzer.model.*;
 import org.junit.jupiter.api.Test;
 

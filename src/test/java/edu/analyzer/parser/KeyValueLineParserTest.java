@@ -1,6 +1,5 @@
 package edu.analyzer.parser;
 
-import edu.KeyValueLineParser;
 import edu.analyzer.model.ParsedLine;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -8,7 +8,7 @@ import edu.analyzer.classifier.DeviceClassifier;
 import edu.analyzer.classifier.SensorClassifier;
 import edu.analyzer.cli.CliArguments;
 import edu.analyzer.output.JsonOutputWriter;
-import edu.KeyValueLineParser;
+import edu.analyzer.parser.KeyValueLineParser;
 import edu.analyzer.service.AnalyzerService;
 import edu.analyzer.service.RecordType;
 
@@ -32,12 +32,12 @@ public class EventStreamAnalyzer {
             cli = CliArguments.parse(args);
         } catch (IllegalArgumentException e) {
             System.err.println("Error:" + e.getMessage());
-            System.err.println("Usage: java -jar<jar> --file <filename.txt> [--outdir <directory]");
+            System.err.println("Usage: java -jar <jar> --file <filename.txt> [--outdir <directory]");
             return 1;
         }
 
         if (!Files.isRegularFile(cli.getFile())) {
-            System.err.println("Error: input file not found:" + cli.getFile());
+            System.err.println("Error: input file not found: " + cli.getFile());
             return 2;
         }
 

@@ -1,4 +1,4 @@
-package edu.analyzer.edu.analyzer.util;
+package edu.analyzer.util;
 
 import java.util.List;
 

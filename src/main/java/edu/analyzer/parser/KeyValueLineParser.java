@@ -1,6 +1,5 @@
-package edu;
+package edu.analyzer.parser;
 
-import edu.analyzer.model.LineParser;
 import edu.analyzer.model.ParsedLine;
 
 import java.util.HashMap;

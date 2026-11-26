@@ -1,4 +1,4 @@
-package edu.analyzer.model;
+package edu.analyzer.parser;
 
 import edu.analyzer.model.ParsedLine;
 import java.util.Optional;
