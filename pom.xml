@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.10.2</junit.version>
     <gson.version>2.10.1</gson.version>
-    <main.class>edu.analyzer.Main</main.class>
+    <main.class>edu.analyzer.EventStreamAnalyzer</main.class>
   </properties>
 
   <dependencies>
@@ -32,12 +32,7 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>4.13.1</version>
-          <scope>compile</scope>
-      </dependency>
+
   </dependencies>
 
   <build>
@@ -67,7 +62,7 @@
               <createDependencyReducedPom>false</createDependencyReducedPom>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>${edu.analyzer.EventStreamAnalyzer}</mainClass>
+                  <mainClass>edu.analyzer.EventStreamAnalyzer</mainClass>
                 </transformer>
               </transformers>
             </configuration>

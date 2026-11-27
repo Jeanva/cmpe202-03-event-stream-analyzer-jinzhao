@@ -34,12 +34,12 @@ public class CliArguments {
                     }
                     outDir = args[++i];
                 }
-                default -> throw new IllegalArgumentException("Unknown argument:" + args[i]);
+                default -> throw new IllegalArgumentException("Unknown argument: " + args[i]);
             }
         }
 
         if (file == null) {
-            throw new IllegalArgumentException("Missing required argument:--file <filename.txt>");
+            throw new IllegalArgumentException("Missing required argument :--file <filename.txt>");
         }
 
         return new CliArguments(Path.of(file), Path.of(outDir));

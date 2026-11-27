@@ -31,8 +31,8 @@ public class EventStreamAnalyzer {
         try {
             cli = CliArguments.parse(args);
         } catch (IllegalArgumentException e) {
-            System.err.println("Error:" + e.getMessage());
-            System.err.println("Usage: java -jar <jar> --file <filename.txt> [--outdir <directory]");
+            System.err.println("Error: " + e.getMessage());
+            System.err.println("Usage: java -jar <jar> --file <filename.txt> [--outdir <directory>]");
             return 1;
         }
 

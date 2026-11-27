@@ -1,2 +1,6 @@
+edu\analyzer\classifier\ClassifiersTest.class
+edu\analyzer\EndToEndTest.class
+edu\analyzer\parser\KeyValueLineParserTest.class
+edu\analyzer\aggregator\AggregatorsTest.class
 edu\analyzer\util\NumberFormatterTest.class
 edu\analyzer\util\StatisticsUtilTest.class
